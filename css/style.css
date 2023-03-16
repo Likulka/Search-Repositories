@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid grey;
+  flex: 1 1 auto;
+  outline: none;
+}
+.input:focus {
+  border-bottom: 1px solid rgb(54, 53, 53);
+}
+
+.form {
+  display: flex;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.button {
+  background: url("../img/search.svg") 0 0/40px 40px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.button:hover {
+  opacity: 1;
+}
+
+.container {
+  width: 800px;
+  padding: 0 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.results__item {
+  border: 1px solid grey;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 5px 10px 1px rgba(128, 128, 128, 0.2);
+  color: black;
+  line-height: 160%;
+}
+.results__item span {
+  color: rgb(72, 183, 183);
+}
+
+.result__name {
+  font-weight: 500;
+  font-size: 20px;
+}
+.result__name:hover {
+  color: rgb(181, 142, 11);
+}
+.error {
+  position: absolute;
+  bottom: 0;
+  color: rgba(210, 54, 54, 0.78);
+}
+
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 22px;
+  }
+}
