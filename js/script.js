@@ -23,7 +23,7 @@ function showError(form){
 
 async function searchRepo(str){
     const octokit = new Octokit({
-      auth: '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'
+      auth: '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'
     })
 
     let resp = await octokit.request(`GET /search/repositories?q=${str}&per_page=10`, {
