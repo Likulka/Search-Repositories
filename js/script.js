@@ -4,6 +4,7 @@ import { Octokit, App } from "https://cdn.skypack.dev/octokit";
 const form = document.querySelector('form');
 const results = document.querySelector('.results');
 
+console.log('edjasb')
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -22,7 +23,7 @@ function showError(form){
 
 async function searchRepo(str){
     const octokit = new Octokit({
-      auth: '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'
+      auth: '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'
     })
 
     let resp = await octokit.request(`GET /search/repositories?q=${str}&per_page=10`, {
