@@ -1,6 +1,4 @@
 'use strict'
-import { Octokit, App } from "https://cdn.skypack.dev/octokit";
-
 const form = document.querySelector('form');
 const results = document.querySelector('.results');
 
